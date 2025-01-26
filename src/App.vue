@@ -12,7 +12,6 @@ import { RouterView } from "vue-router";
 import { useRoute } from "vue-router";
 import { computed, defineAsyncComponent } from "vue";
 
-// Dynamically import Navbar component
 const Navbar = defineAsyncComponent(() =>
   import("@/components/DogNavBar.vue")
 );

@@ -4,18 +4,18 @@ export interface Coordinates {
 }
 
 export interface DogSearchQuery {
-    breeds?: string[]; // Array of breeds to filter by
-    zipCodes?: string[]; // Array of zip codes to filter by
-    ageMin?: number; // Minimum age for filtering
-    ageMax?: number; // Maximum age for filtering
-    size?: number; // Number of results to return per page
-    from?: number; // Cursor for pagination
-    sort?: string; // Sort field and order, e.g., "breed:asc"
+    breeds?: string[];
+    zipCodes?: string[];
+    ageMin?: number;
+    ageMax?: number;
+    size?: number;
+    from?: number;
+    sort?: string;
   }
-  
+
   export interface LocationSearchQuery {
-    city?: string; // Partial or full city name
-    states?: string[]; // Array of state abbreviations (e.g., ["CA", "NY"])
+    city?: string;
+    states?: string[];
     geoBoundingBox?: {
       top?: Coordinates;
       left?: Coordinates;
@@ -26,7 +26,6 @@ export interface DogSearchQuery {
       bottom_right?: Coordinates;
       top_right?: Coordinates;
     };
-    size?: number; // Number of results to return per page
-    from?: number; // Cursor for pagination
+    size?: number;
+    from?: number;
   }
-  

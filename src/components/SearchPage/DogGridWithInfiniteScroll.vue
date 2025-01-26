@@ -69,7 +69,7 @@
   }
 
   .card-container {
-    margin: 0 auto; /* Center the card within its column */
+    margin: 0 auto;
   }
 
   .v-progress-circular {
